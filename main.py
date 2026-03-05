@@ -1,7 +1,7 @@
 import grades
 
-LAST_NAME = "Madrigal"
-STUDENT_ID = "TUPM-24-1234"
+LAST_NAME = "Polinar"
+STUDENT_ID = "TUPM-25-4493"
 
 SEED_DIGIT = int(STUDENT_ID[-1])
 ID_SUM = sum(int(d) for d in STUDENT_ID if d.isdigit())

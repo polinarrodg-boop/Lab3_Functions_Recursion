@@ -32,18 +32,15 @@ CONTROL_NUM = max(1, SEED_NUM)
 
 from access_control import compute_access_level, validate_access
 
-SEED_NUM = 7  # change this
-FAVORITE_ARTIST = "TAYLORSWIFT"  # change this
+SEED_NUM = 3
+FAVORITE_ARTIST = "TAYLORSWIFT"  
 CONTROL_NUM = max(1, SEED_NUM)
 
-# Compute
 access_level = compute_access_level(CONTROL_NUM, FAVORITE_ARTIST)
 threshold = CONTROL_NUM * 5
 
-# Validate
 decision = validate_access(access_level, threshold)
 
-# Print required assessment data
 print("CONTROL_NUM Used:", CONTROL_NUM)
 print("FAVORITE_ARTIST Length:", len(FAVORITE_ARTIST))
 print("Computed Access Level:", access_level)
